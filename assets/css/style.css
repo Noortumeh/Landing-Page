@@ -1,0 +1,268 @@
+/* ---- Base Rules ---- */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+/* Global Style */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.orange{
+    color : rgb(255, 81, 26);
+    font-weight: 800;
+}
+.green-btn{
+    background-color: rgb(67, 186, 127);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.orange-btn{
+    background-color: rgb(255, 81, 26);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.btn:hover{
+    border: 1px solid rgba(255, 255, 255,0.5);
+}
+/* white Line between content */
+.dec{
+    width: 90px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+/* End Global */
+/* Start Landing page (Home) */
+.landing-page{
+    color: #fff;
+    min-height: 100vh;
+    background-image: url('../image/home1.jpg');
+    background-size: cover;
+}
+/* Start Navbar */
+.navbar{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 1s;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navbar Items */
+.navbar ul{
+    display: flex;
+    margin-right: 30px;
+    list-style: none;
+}
+.navbar ul li{
+    padding-right: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.navbar ul li a:hover, .navbar ul li a .active{
+    color: orangered;
+}
+.navbar ul li a .active{
+    color: orangered;
+}
+/* End Navbar Item */
+.logo{
+    max-width: 200px;
+}
+.logo img{
+    width: 100%;
+}
+/* Start Home Header */
+.Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 100px;
+}
+.Home h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.Home p{
+    font-size: 15px;
+    width: 70%;
+    line-height: 25px;
+}
+.Home .buttons{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+/* End Landing page Home */
+/* Start Services Section */
+.Services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    margin-bottom: 20px;
+}
+/* Card Style */
+.card{
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card i{
+    color: rgb(67, 186, 127);
+    font-size: 70px;
+    margin-right: 20px;
+}
+.card:hover i{
+    color: orangered;
+    transition: all 0.5s;
+}
+@media(min-width: 850px) {
+    .Services{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 100px;
+    }
+    .card{
+        width: 100%;
+    }
+}
+/* End Services Section */
+/* Start About Section */
+.About .title{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.About img{
+    width: 100%;
+}
+.About .desc h5{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+@media(min-width: 850px) {
+    .About .desc{
+        display: flex;
+    }
+    .About img{
+        width: 50%;
+    }
+}
+/* End About Section */
+/* Start Skills */
+.Skills{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #EEE;
+}
+.Skills h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0 50px;
+    text-align: center;
+}
+.Skills .skill-box{
+    background-color: #fff;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.Skills .skill-box .skill-name{
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+    line-height: 30px;
+}
+.Skills .skill-box .skill-progress{
+    height: 30px;
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    position: relative;
+}
+.Skills .skill-box .skill-progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: orangered;
+    transition: all 0.5s;
+}
+/* Start  Footer */
+.footer{
+    background-color: rgb(67, 186, 127);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.footer .social-media{
+    margin: 30px 0;
+}
+.footer .social-media a{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+.footer .social-media a:hover{
+    color: orangered;
+    transition: all 0.5s;
+}
+@media(min-width: 850px) {
+    .footer ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.scroll-top{
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 100%;
+    background-color: orangered;
+    cursor: pointer;
+}
+.scroll-top:hover{
+    background-color: rgb(67, 186, 127);
+    transition: all 0.5s;
+}
