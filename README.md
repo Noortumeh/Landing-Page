@@ -16,7 +16,7 @@ I created a progress bar. When you reach the skills section, the progress begins
 According to the proportion of each of them which i store it in the data set 
 #### and More things I did, whether from designing the appearance or interacting with the user
 ### Note:
-I used some ideas from chatgpt and also from osama El Zero on YouTube
+I used some ideas from chatgpt and also from osama El Zero on YouTube and MDN website.
 
 This helped me do some additional things and learn new ways to do certain things. 
 From what you can see in my code, I did certain things in different ways to understand the new information that I learned.
